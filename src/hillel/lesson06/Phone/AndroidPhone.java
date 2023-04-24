@@ -1,9 +1,9 @@
 package hillel.lesson06.Phone;
 
-public class IPhone extends Phone {
+public class AndroidPhone extends Phone{
     @Override
     public void makeCall(String num) {
-        System.out.println("Calling " + num + " from IPhone");
+        System.out.println("Calling " + num + " from Android");
     }
 
     @Override
@@ -28,6 +28,6 @@ public class IPhone extends Phone {
 
     @Override
     public void receiveCall(String num) {
-        System.out.println("New call " + num + " on IPhone");
+        System.out.println("New call " + num + " on Android");
     }
 }
