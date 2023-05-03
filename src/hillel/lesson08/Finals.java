@@ -5,6 +5,6 @@ public class Finals {
     public final String FINAL_CONST_VAR;
 
     public Finals(String value) {
-        FINAL_CONST_VAR =
+        FINAL_CONST_VAR =value;
     }
 }
