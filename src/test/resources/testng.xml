@@ -1,18 +1,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1" >
-<!--    <test name="Nopackage" >-->
-<!--<classes>-->
-<!--    <class name="ua.hillel.FirstTest"></class>-->
-<!--    <class name="ua.hillel.SecondTest"></class>-->
-<!--</classes>-->
-<!--    </test>-->
+    <test name="Nopackage" >
+<classes>
+    <class name="ua.hillel.Login.TestLogin"></class>
+    <class name="ua.hillel.Login.SecondTestIfFirstFailed"></class>
+</classes>
+    </test>
 
-    <test name="Regression1" parallel="classes" thread-count="5">
-<packages>
-    <package name="ua.hillel.ParallelTests"></package>
+    <test name="Regression1" >
+<!--<packages>-->
+<!--    <package name="ua.hillel.Login"></package>-->
+<!--</packages>-->
+            <parameter name="param1" value="1000" />
+            <parameter name="param2" value="2000" />
 
-</packages>
+        <classes>
+            <class name="ua.hillel.TestWithParams" />
+        </classes>
 <!--        <parameter name="url" value="http://stage1.com"></parameter>-->
 <!--        <parameter name="browserName" value="chrome"></parameter>-->
 <!--        <classes>-->
