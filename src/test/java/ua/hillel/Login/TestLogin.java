@@ -14,7 +14,7 @@ public class TestLogin {
             };
         }
 
-        @Test(dataProvider = "loginData", groups = "login")
+        @Test(dataProvider = "loginData", groups = "Login")
         public void TestLogin(String username, String password, String role) {
             System.out.println("TestLogin : username=" + username + ", password=" + password + ", role=" + role);
         }
