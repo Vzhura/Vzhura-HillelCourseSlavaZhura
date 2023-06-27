@@ -71,7 +71,7 @@ class DownloadPage {
     private String getDownloadedFilePath() {
         //Отримання шляху завантаженого файлу
         //Повернення шляху файлу
-        return "F:\\UserTest\\some-file.txt";
+        return "downloads/some-file.txt";
     }
 }
 
