@@ -16,6 +16,8 @@
         <seleniumVersion>4.9.1</seleniumVersion>
         <webdrivermanager>5.3.3</webdrivermanager>
         <selenideVersion>6.15.0</selenideVersion>
+        <okhttpVersion>4.11.0</okhttpVersion>
+        <gsonVersion>2.10.1</gsonVersion>
     </properties>
 
     <dependencies>
@@ -55,6 +57,20 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+
+        <!--REST-->
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttpVersion}</version>
+        </dependency>
+
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gsonVersion}</version>
+            </dependency>
 
 
     </dependencies>
