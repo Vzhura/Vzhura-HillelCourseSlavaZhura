@@ -5,10 +5,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import java.util.List;
+import ua.hillel.Listeners.CustomExtentReportListener;
 
+import java.util.List;
+@Listeners({ CustomExtentReportListener.class})
 public class WebTableTest {
+    protected WebDriver driver;
     @Test
     public void WebTable() {
         // Вказуємо шлях до драйвера Chrome
