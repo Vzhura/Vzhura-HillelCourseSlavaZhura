@@ -6,11 +6,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import ua.hillel.Listeners.CustomExtentReportListener;
 
-@Listeners({CustomExtentReportListener.class})
-public class TestWithParams {
-    protected WebDriver driver;
 
-    public static class TestWithParams1 {
+    public class TestWithParams {
 
         @Test
         @Parameters({"param1", "param2"})
@@ -19,5 +16,5 @@ public class TestWithParams {
             System.out.println("Другий параметр: " + param2);
         }
     }
-}
+
 

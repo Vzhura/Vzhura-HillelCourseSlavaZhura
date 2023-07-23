@@ -5,9 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import ua.hillel.Listeners.CustomExtentReportListener;
 
-    public class LoginTest2 {
+@Listeners({ CustomExtentReportListener.class})
+public class LoginTest2 {
+    protected WebDriver driver;
         @Test
         public void TestLogin2() {
             // Вказуємо шлях до драйвера Chrome

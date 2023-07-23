@@ -3,15 +3,10 @@ package ua.hillel;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import ua.hillel.Listeners.CustomExtentReportListener;
 
-@Listeners({CustomExtentReportListener.class})
-public class DataProviderTest {
-    protected WebDriver driver;
 
-    public class BaseTest {
+    public class DataProviderTest {
         @Test(dataProvider = "userProvider")
         public void userRoleTest(String userName, String password, String role) {
             String[] roles = {"user", "admin", "guest"};
@@ -43,4 +38,3 @@ public class DataProviderTest {
             return users;
         }
     }
-}

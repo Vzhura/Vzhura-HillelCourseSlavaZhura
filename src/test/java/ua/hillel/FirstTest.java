@@ -5,12 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ua.hillel.Listeners.CustomExtentReportListener;
-
-@Listeners({CustomExtentReportListener.class})
-public class FirstTest {
-    protected WebDriver driver;
-
-    public static class FirstTest1 {
+    public class FirstTest {
         @Test(groups = {"regression", "smoke", "P1"},
                 enabled = false,
                 dependsOnMethods = {"innerTest", "tests.SecondTest.secondTest"},
@@ -40,4 +35,3 @@ public class FirstTest {
 
         }
     }
-}

@@ -3,12 +3,17 @@ package HW16;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import ua.hillel.Listeners.CustomExtentReportListener;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+@Listeners({ CustomExtentReportListener.class})
 public class dynamicLoadingElementTest {
+    protected WebDriver driver;
 
     @Test
     public void dynamicLoadingElementTest() {
